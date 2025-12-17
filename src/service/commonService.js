@@ -1,6 +1,6 @@
 // src/service/commonService.js
 
-export const API_BASE_URL = '/api';
+export const API_BASE_URL = 'https://3.37.46.8:9000';
 
 // import {API_BASE_URL} from "../config/api";  // vecel 배포 테스트 중 추가
 
