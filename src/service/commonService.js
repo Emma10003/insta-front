@@ -16,7 +16,7 @@ export const getImageUrl = (path) => {
     if(path === 'default-avatar.jpg') return '/static/img/default-avatar.jpg';
     if(!path.startsWith('http')) {
         if(path === 'default-avatar.png') return '/static/img/default-avatar.jpg';
-        return `/${API_BASE_URL}${path}`
+        return `${API_BASE_URL}${path}`
     };
 
     return `${API_BASE_URL}${path}`;
