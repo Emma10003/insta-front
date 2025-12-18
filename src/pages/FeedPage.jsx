@@ -150,7 +150,7 @@ const FeedPage = () => {
                                     onDelete={deletePost}/>
                             </div>
 
-                            <img src={post.postImage} className="post-image"
+                            <img src={getImageUrl(post.postImage)} className="post-image"
                                  onClick={() => navigate(`/post/${post.postId}`)}
                                  style={{cursor:'pointer'}}
                             />
