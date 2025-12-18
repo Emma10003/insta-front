@@ -11,13 +11,12 @@ export const API_BASE_URL = 'https://3.37.46.8:9000';
  */
 
 export const getImageUrl = (path) => {
-    return `${API_BASE_URL}${path}`;
     if(!path) return '/static/img/default-avatar.jpg';
-    if(path.startsWith('http')) return path;
+    if(path.startsWith('http')) return `${API_BASE_URL}${path}`;
     if(path === 'default-avatar.jpg') return '/static/img/default-avatar.jpg';
     if(path === 'default-avatar.png') return '/static/img/default-avatar.jpg';
 
-    // return `${API_BASE_URL}${path}`;
+    return `${API_BASE_URL}${path}`;
 }
 
 // 날짜 포맷팅
